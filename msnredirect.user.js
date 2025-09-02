@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MSNRedirect
 // @namespace    Violentmonkey Scripts
-// @version      1.1.2
+// @version      2.0.0
 // @description  Automatically redirects MSN and Yahoo news articles to their original source. Should work for any site using <link rel="canonical"> if you add a match rule.
 // @author       pr0xim1ty
 // @author       Ultrabenosaurus
@@ -125,3 +125,4 @@ function articleOlderThan( months ) {
     //console.info( 'MSN Redirect', document.querySelector('meta[property="article:published_time"]').content, new Date().setMonth(new Date().getMonth() - months).toString().substring(0, 10), document.querySelector('meta[property="article:published_time"]').content - new Date().setMonth(new Date().getMonth() - months).toString().substring(0, 10) );
     return document.querySelector('meta[property="article:published_time"]').content < new Date().setMonth(new Date().getMonth() - months).toString().substring(0, 10);
 }
+
