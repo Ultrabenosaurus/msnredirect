@@ -21,7 +21,7 @@
 
   const redirect = () => {
     const canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical && canonical.href && !canonical.href.includes("msn.com") && !canonical.href.includes("yahoo.com"))) { // just in case
+    if (canonical && canonical.href && !canonical.href.includes("msn.com") && !canonical.href.includes("yahoo.com")) { // just in case
       window.location.href = canonical.href;
       return true;
     }
@@ -43,5 +43,6 @@
     subtree: true,
   });
 })();
+
 
 
