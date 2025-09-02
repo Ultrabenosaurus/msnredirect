@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MSNRedirect
 // @namespace    Violentmonkey Scripts
-// @version      1.1.1
+// @version      1.1.2
 // @description  Automatically redirects MSN news articles to their original source.
 // @author       pr0xim1ty
 // @match        *://*.msn.com/*/news/*
@@ -43,6 +43,7 @@
     subtree: true,
   });
 })();
+
 
 
 
