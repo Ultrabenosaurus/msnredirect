@@ -4,7 +4,7 @@
 // @version      1.1.1
 // @description  Automatically redirects MSN news articles to their original source.
 // @author       pr0xim1ty
-// @match        *://*.msn.com/*
+// @match        *://*.msn.com/*/news/*
 // @match        *://*.yahoo.com/news/*
 // @icon         https://raw.githubusercontent.com/pr0xim1ty/msnredirect/refs/heads/main/msnredirect.png
 // @grant        none
@@ -15,9 +15,9 @@
 (function () {
   "use strict";
 
-  if (window.location.href.includes("msn.com") && !/\/ar-[A-Z0-9]+/.test(window.location.href)) {
-    return;
-  }
+  //if (window.location.href.includes("msn.com") && !/\/ar-[A-Z0-9]+/.test(window.location.href)) {
+  //  return;
+  //}
 
   const redirect = () => {
     const canonical = document.querySelector('link[rel="canonical"]');
@@ -43,6 +43,7 @@
     subtree: true,
   });
 })();
+
 
 
 
